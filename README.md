@@ -14,7 +14,7 @@ First, clone this repository:
 # Clone this repository
 git clone https://github.com/MaryemAman/carbon-footprint-calculator.git
 
-## Have Fun!
+## **Have Fun!**
 
 ### Week9 - 11 -> Group Project
 ### Team Burgundy
