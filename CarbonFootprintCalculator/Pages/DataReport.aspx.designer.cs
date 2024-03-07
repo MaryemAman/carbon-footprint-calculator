@@ -15,21 +15,21 @@ namespace CarbonFootprintCalculator.Account
     {
 
         /// <summary>
-        /// tblTransportEmissions control.
+        /// CustomerGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tblTransportEmissions;
+        protected global::System.Web.UI.WebControls.GridView CustomerGridView;
 
         /// <summary>
-        /// tblElectricityConsumption control.
+        /// ElectricityGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tblElectricityConsumption;
+        protected global::System.Web.UI.WebControls.GridView ElectricityGridView;
     }
 }

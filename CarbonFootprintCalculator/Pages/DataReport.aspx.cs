@@ -1,59 +1,50 @@
 ﻿using System.Web.UI.WebControls;
 using System;
+using Newtonsoft.Json;
+using static CarbonFootprintCalculator.Account.DataEntry;
+using System.Collections.Generic;
+using System.IO;
 
 namespace CarbonFootprintCalculator.Account
 {
     public partial class DataReport : System.Web.UI.Page
     {
+        private readonly string customerFilePath = "~/App_Data/CustomerList.json";
+        private readonly string electricityFilePath = "~/App_Data/ElectricityList.json";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                PopulateTransportEmissionsData();
-                PopulateElectricityConsumptionData();
+                LoadCustomerData();
+                LoadElectricityData();
             }
         }
 
-        private void PopulateTransportEmissionsData()
+        private void LoadCustomerData()
         {
-            // Sample data for transport emissions
-            var transportData = new[]
+            if (File.Exists(Server.MapPath(customerFilePath)))
             {
-                new { VehicleType = "Car", Distance = 100, FuelType = "Gasoline", FuelEfficiency = 25, EntryDate = DateTime.Now.AddDays(-1) },
-                new { VehicleType = "Truck", Distance = 200, FuelType = "Diesel", FuelEfficiency = 15, EntryDate = DateTime.Now.AddDays(-2) }
-            };
+                string jsonData = File.ReadAllText(Server.MapPath(customerFilePath));
+                List<Customer> customerList = JsonConvert.DeserializeObject<List<Customer>>(jsonData);
 
-            // Populate the transport emissions table
-            foreach (var data in transportData)
-            {
-                TableRow row = new TableRow();
-                row.Cells.Add(new TableCell { Text = data.VehicleType });
-                row.Cells.Add(new TableCell { Text = data.Distance.ToString() });
-                row.Cells.Add(new TableCell { Text = data.FuelType });
-                row.Cells.Add(new TableCell { Text = data.FuelEfficiency.ToString() });
-                row.Cells.Add(new TableCell { Text = data.EntryDate.ToString("yyyy-MM-dd") });
-                tblTransportEmissions.Rows.Add(row);
+                CustomerGridView.DataSource = customerList;
+                CustomerGridView.DataBind();
             }
         }
 
-        private void PopulateElectricityConsumptionData()
+        private void LoadElectricityData()
         {
-            // Sample data for electricity consumption
-            var electricityData = new[]
+            if (File.Exists(Server.MapPath(electricityFilePath)))
             {
-                new { EnergySource = "Grid", ElectricityUsage = 500, EntryDate = DateTime.Now.AddDays(-1) },
-                new { EnergySource = "Solar", ElectricityUsage = 300, EntryDate = DateTime.Now.AddDays(-2) }
-            };
+                string jsonData = File.ReadAllText(Server.MapPath(electricityFilePath));
+                List<Electricity> electricityList = JsonConvert.DeserializeObject<List<Electricity>>(jsonData);
 
-            // Populate the electricity consumption table
-            foreach (var data in electricityData)
-            {
-                TableRow row = new TableRow();
-                row.Cells.Add(new TableCell { Text = data.EnergySource });
-                row.Cells.Add(new TableCell { Text = data.ElectricityUsage.ToString() });
-                row.Cells.Add(new TableCell { Text = data.EntryDate.ToString("yyyy-MM-dd") });
-                tblElectricityConsumption.Rows.Add(row);
+                ElectricityGridView.DataSource = electricityList;
+                ElectricityGridView.DataBind();
             }
         }
+
+
     }
 }

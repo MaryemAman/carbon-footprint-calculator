@@ -15,31 +15,31 @@ namespace CarbonFootprintCalculator.Account
     {
 
         /// <summary>
-        /// ddlVehicleType control.
+        /// drpVehicleType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlVehicleType;
+        protected global::System.Web.UI.WebControls.DropDownList drpVehicleType;
 
         /// <summary>
-        /// txtDistance control.
+        /// txtDistanceTravelled control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDistance;
+        protected global::System.Web.UI.WebControls.TextBox txtDistanceTravelled;
 
         /// <summary>
-        /// ddlFuelType control.
+        /// drpFuelType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlFuelType;
+        protected global::System.Web.UI.WebControls.DropDownList drpFuelType;
 
         /// <summary>
         /// txtFuelEfficiency control.
@@ -51,22 +51,22 @@ namespace CarbonFootprintCalculator.Account
         protected global::System.Web.UI.WebControls.TextBox txtFuelEfficiency;
 
         /// <summary>
-        /// btnSubmitTransport control.
+        /// Submit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSubmitTransport;
+        protected global::System.Web.UI.WebControls.Button Submit;
 
         /// <summary>
-        /// ddlEnergySource control.
+        /// drpEnergyUsage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlEnergySource;
+        protected global::System.Web.UI.WebControls.DropDownList drpEnergyUsage;
 
         /// <summary>
         /// txtElectricityUsage control.
@@ -78,12 +78,12 @@ namespace CarbonFootprintCalculator.Account
         protected global::System.Web.UI.WebControls.TextBox txtElectricityUsage;
 
         /// <summary>
-        /// btnSubmitElectricity control.
+        /// Button2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSubmitElectricity;
+        protected global::System.Web.UI.WebControls.Button Button2;
     }
 }
