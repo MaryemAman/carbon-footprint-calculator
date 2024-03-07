@@ -151,8 +151,8 @@
     <Content Include="About.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
-    <Content Include="Account\DataEntry.aspx" />
-    <Content Include="Account\DataReport.aspx" />
+    <Content Include="Pages\DataEntry.aspx" />
+    <Content Include="Pages\DataReport.aspx" />
     <Content Include="Account\Forgot.aspx" />
     <Content Include="Account\Lockout.aspx" />
     <Content Include="Account\Login.aspx" />
@@ -265,18 +265,18 @@
     <Compile Include="Account\Confirm.aspx.designer.cs">
       <DependentUpon>Confirm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Account\DataEntry.aspx.cs">
+    <Compile Include="Pages\DataEntry.aspx.cs">
       <DependentUpon>DataEntry.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Account\DataEntry.aspx.designer.cs">
+    <Compile Include="Pages\DataEntry.aspx.designer.cs">
       <DependentUpon>DataEntry.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Account\DataReport.aspx.cs">
+    <Compile Include="Pages\DataReport.aspx.cs">
       <DependentUpon>DataReport.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Account\DataReport.aspx.designer.cs">
+    <Compile Include="Pages\DataReport.aspx.designer.cs">
       <DependentUpon>DataReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Forgot.aspx.cs">

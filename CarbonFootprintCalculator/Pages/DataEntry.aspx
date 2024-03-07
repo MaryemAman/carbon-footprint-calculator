@@ -1,25 +1,21 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DataEntry.aspx.cs" Inherits="CarbonFootprintCalculator.Account.DataEntry" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DataEntry.aspx.cs" Inherits="CarbonFootprintCalculator.Account.DataEntry" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Data Entry</title>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style>
-        body {
-            background-color: #f2f2f2; /* Light gray background */
-            margin: 0;
+        /*body {
+            background-color: #f2f2f2;*/ /* Light gray background */
+            /*margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
         }
         .container {
-            width: 75%; /* 75% width of the page */
-            margin: 50px auto; /* Center the container */
-            background-color: #fff; /* White background */
-            padding: 20px;
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
-        }
+            width: 75%;*/ /* 75% width of the page */
+            /*margin: 50px auto;*/ /* Center the container */
+            /*background-color: #fff;*/ /* White background */
+            /*padding: 20px;
+            border-radius: 10px;*/ /* Rounded corners */
+            /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/ /* Box shadow */
+        /*}*/
         h2, h3 {
             color: #333; /* Dark gray text color */
         }
@@ -38,9 +34,7 @@
             background-color: #49796B; /* Darker green on hover */
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+
         <div class="container">
             <h1 style="text-align: center; color:#00693E;">Data Entry</h1>
             <h2>Transport Emissions</h2>
@@ -86,6 +80,4 @@
                 <asp:Button runat="server" ID="btnSubmitElectricity" Text="Submit Electricity Data" CssClass="btn" OnClick="btnSubmitElectricity_Click" />
             </div>
         </div>
-    </form>
-</body>
-</html>
+    </asp:Content>
