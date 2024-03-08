@@ -12,7 +12,7 @@
                 <asp:BoundField HeaderText="Vehicle Type" DataField="VehicleType" HeaderStyle-BackColor="#2D6A4F" HeaderStyle-ForeColor="White" />
                 <asp:BoundField HeaderText="Fuel Type" DataField="FuelType" HeaderStyle-BackColor="#40916C" HeaderStyle-ForeColor="White" />
                 <asp:BoundField HeaderText="Entry Date" DataField="EntryDate" HeaderStyle-BackColor="#52B788" HeaderStyle-ForeColor="White" />
-                <asp:BoundField HeaderText="CO2 Emissions (kg)" DataField="CO2Emissions" HeaderStyle-BackColor="#52B700" HeaderStyle-ForeColor="White" />
+                <asp:BoundField HeaderText="CO2 Emissions (kg CO2e)" DataField="CO2Emissions" HeaderStyle-BackColor="#52B700" HeaderStyle-ForeColor="White" />
             </Columns>
         </asp:GridView>
     </div>
@@ -24,7 +24,7 @@
                 <asp:BoundField HeaderText="Energy Usage" DataField="EnergyUsage" HeaderStyle-BackColor="#081C15" HeaderStyle-ForeColor="White"/>
                 <asp:BoundField HeaderText="Electricity Usage" DataField="ElectricityUsage" HeaderStyle-BackColor="#1B4332" HeaderStyle-ForeColor="White"/>
                 <asp:BoundField HeaderText="Entry Date" DataField="EntryDate" HeaderStyle-BackColor="#52B788" HeaderStyle-ForeColor="White" />
-                <asp:BoundField HeaderText="CO2 Emissions (kg)" DataField="CO2Emissions" HeaderStyle-BackColor="#52B700" HeaderStyle-ForeColor="White" />
+                <asp:BoundField HeaderText="CO2 Emissions (kg CO2e)" DataField="CO2Emissions" HeaderStyle-BackColor="#52B700" HeaderStyle-ForeColor="White" />
             </Columns>
         </asp:GridView>
     </div>
