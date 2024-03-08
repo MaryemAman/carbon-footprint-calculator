@@ -5,6 +5,7 @@
     <header>
         <%--<h1>Contact Us</h1>--%>
     <link href="~/style2.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <style>
             input[type=text], select, textarea {
                 width: 100%;
@@ -39,7 +40,7 @@
 
         </style>
 
-        <img src="ContactUsPic2.png" alt="Contact Us" style="width: 50%; height: 200px; object-fit: cover; margin-bottom:5%;">
+        <img src="ContactUsPic2.png" alt="Contact Us" style="width: 70%; height: 250px; object-fit: cover; margin-bottom:5%;">
 
         <p>If you have any questions or inquiries, feel free to reach out to us using the form below:</p>
     </header>
@@ -49,15 +50,15 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="contact-info">
-                        <h3 style="color: #00693E; text-transform:uppercase; margin-top:3%;">Team Burgundy</h3>
+                        <h3 style="color: #00693E; text-transform:uppercase; margin-top:3%;">Team Burgundy</h3><br />
                         <address>
-                            <span style="color: black;">Addis Ababa, Ethiopia</span><br />
-                            <span style="color: black;">Kigali, Rwanda</span><br />
-                            <abbr title="Phone" style="color: darkgray;">P:</abbr> <span style="color: #333;">+251 9123 4567 789</span><br />
-                            <abbr title="Phone" style="color: darkgray;">P:</abbr> <span style="color: #333;">+250 9123 4567 789</span>
+                            <i class="bi bi-geo-alt-fill" style = "color:#00693E;"><span style="color: black;">Addis Ababa, Ethiopia</span></i><br />
+                            <i class="bi bi-geo-alt-fill" style = "color:#00693E;"><span style="color: black;">Kigali, Rwanda</span></i><br />
+                            <i class="bi bi-telephone-fill" style = "color:#00693E;"><span style="color: #333;">+251 9123 4567 789</span></i><br />
+                            <i class="bi bi-telephone-fill" style = "color:#00693E;"><span style="color: #333;">+250 9123 4567 789</span></i>
                         </address>
                         <address>
-                            <strong style="color: #fdcb6e;">Email:</strong>   <a href="mailto:team.burgundy@azubiafrica.org" style="color: #fdcb6e;">Team.Burgundy@azubiafrica.org</a><br />
+                            <strong style="color: #00693E;">Email:</strong>   <a href="mailto:team.burgundy@azubiafrica.org" style="color: black;">Team.Burgundy@azubiafrica.org</a><br />
                         </address>
                     </div>
                 </div>
