@@ -17,7 +17,7 @@ First, clone this repository:
 
 Select "Package Manager Console" which is found under the "View" Tab > "Other Windows" Option > "Package Manager Console" Option
 
-#### Step2: Type this in the Package Manager Console
+#### Step2: Type this in the Package Manager Console then Press Enter
 Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r
 
 #### Then try running the project again
