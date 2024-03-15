@@ -27,5 +27,4 @@ git clone https://github.com/MaryemAman/carbon-footprint-calculator.git
 
 ## **Have Fun!**
 
-### Week9 - 11 -> Group Project
-### Team Burgundy
+### Group Project - Team Burgundy
