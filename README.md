@@ -25,6 +25,6 @@ Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r
 # Clone this repository
 git clone https://github.com/MaryemAman/carbon-footprint-calculator.git
 
-## **Have Fun!**
+## **Have Fun!  🎉**
 
 ### Group Project - Team Burgundy
