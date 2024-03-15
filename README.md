@@ -10,6 +10,10 @@ A carbon footprint is the total amount of greenhouse gases emitted directly or i
 
 First, clone this repository:
 
+# To Clone this repository
+git clone https://github.com/MaryemAman/carbon-footprint-calculator.git
+
+
 ### If you encounter any issue with running the project after cloning
 
 #### Step1: Follow this
@@ -22,8 +26,7 @@ Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r
 
 #### Then try running the project again
 
-# Clone this repository
-git clone https://github.com/MaryemAman/carbon-footprint-calculator.git
+
 
 ## **Have Fun!  🎉**
 
